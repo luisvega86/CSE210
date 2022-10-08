@@ -48,6 +48,4 @@ root                    (project root folder)
 
 ## Authors
 ---
-* Patterson, Jay Clifford
-* Ruiz Carrero, Edisson Jacob
 * Vega Iscala, Luis Alfredo

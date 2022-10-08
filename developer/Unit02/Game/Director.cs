@@ -71,7 +71,7 @@ namespace Unit02.HiLo
             Console.WriteLine($"The next card was:{nextCard}");
 
             
-            // Possible outcomes
+            // Possible outcomes for h: higher
             if (cardGuess == "h" && currentCard < nextCard)
             {
                 lifeScore += guessRight;
@@ -86,6 +86,7 @@ namespace Unit02.HiLo
                 }
             }
 
+            // Possible outcomes for l: lower
             if (cardGuess == "l" && currentCard > nextCard)
             {
                 lifeScore += guessRight;
@@ -102,7 +103,8 @@ namespace Unit02.HiLo
 
 
         }
-
+        // Determine if the score of the user is != 0, turn the drawed card to the current card.
+        // ask the user if wants to keep playing
         public void gameResume()
         {
             Console.WriteLine($"Your score is {lifeScore}");
@@ -112,10 +114,10 @@ namespace Unit02.HiLo
                 Console.WriteLine("Game Over");
             }
 
-            if (!isPlaying)
-            {
-                return;
-            }
+            // if (!isPlaying)
+            // {
+            //     return;
+            // }
 
             currentCard = nextCard;
             Console.Write("Play again? [y/n]: ");
